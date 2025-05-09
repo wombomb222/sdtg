@@ -479,7 +479,7 @@ function handlePrefixConversion() {
     
     // 計算並顯示 postfix 結果
     const tokens = tokenize(infix);
-    const { output: postfixOutput } = infixToPostfixSteps(tokens);
+    const { output: postfixOutput } = infixToPostfixSteps(tokens, 0);
     postfixResult.textContent = tokensToString(postfixOutput);
     
     try {
